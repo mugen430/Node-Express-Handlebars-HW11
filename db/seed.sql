@@ -1,9 +1,9 @@
 USE burgers_db;
 
-INSERT INTO burgers (burger_name, devoured) VALUES ("Yum Burger", 0)
-,("Longanissa Burger", 0)
-, ("Spicy Deluxe", 0)
-, ("Cheese Burger", 0)
-, ("Bacon Burger", 1)
-, ("Amboy Burger", 1)
-, ("Flipn Burger", 1);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Yum Burger", true)
+,("Longanissa Burger", false)
+, ("Spicy Deluxe", true)
+, ("Cheese Burger", false)
+, ("Bacon Burger", true)
+, ("Amboy Burger", false)
+, ("Flipn Burger", true);
