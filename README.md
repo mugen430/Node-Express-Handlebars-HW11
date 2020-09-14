@@ -14,7 +14,7 @@
 
 
   # Installation Instructions
-  ## **
+  ## NPM I MYSQL EXPRESS EXPRESS-HANDLEBARS
 
 
   # License
@@ -22,4 +22,4 @@
 
 
   # Collaborators
-  ## N/A
+  ##

@@ -14,8 +14,8 @@ router.get("/", function(req, res) {
     res.render("index", hbsObject);
   });
 });
-//==============================================================================================
-router.post("/api/burgers/", function(req, res) {
+
+router.post("/api/burger/", function(req, res) {
   burger.create([
     "burger_name", "devoured"
   ], [
@@ -24,10 +24,11 @@ router.post("/api/burgers/", function(req, res) {
     res.redirect("/");
   });
 });
-//==============================================================================================
 router.put("/api/:id", function(req, res) {
     var condition = "id = " + req.params.id;
+  
     console.log("condition", condition);
+  
     burger.update({
       devoured: 1
     }, condition, function(result) {
@@ -39,7 +40,7 @@ router.put("/api/:id", function(req, res) {
       }
     });
   });
-//==============================================================================================
+
 router.delete("/api/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
